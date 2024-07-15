@@ -61,5 +61,7 @@ def etaphicentre(Module,z):
     return(XYtoetaphi(x/nbsommet,y/nbsommet,z))
 
 
-
-
+def get_module(layer,type,u,v):
+  L = []
+  with open(jsonfile,'r') as file:
+    data = json.load(file)[layer-1]
